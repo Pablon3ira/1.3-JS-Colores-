@@ -1,8 +1,7 @@
 function changeColor(event) {
     const button = event.target
-    const from_color = button.attributes.from_color.value
-    const to_color = button.attributes.to_color.value
-
+    const color = button.dataset.color
+    
     const square = document.getElementById('square')
     square.className = 'square ${color}'
 }
