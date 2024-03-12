@@ -4,7 +4,7 @@ function changeColor(event) {
     const to_color = button.attributes.to_color.value
 
     const square = document.getElementById('square')
-    square.classList.replace(from_color , to_color)
+    square.className = 'square ${color}'
 }
 
 const blue_button = document.getElementById('blue_button')
