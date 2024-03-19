@@ -1,6 +1,6 @@
 function changeColor(color) {
     const square = document.getElementById('square')
-    square.className = 'square ${color}'
+    square.className = `square ${color}`
 }
 
 function colorChangeButtonOnClickHandler(event) {
@@ -8,7 +8,7 @@ function colorChangeButtonOnClickHandler(event) {
     changeColor(color)
 }
 
-const buttons = document.querySelectorAll ('[data-type=color_changing_button]')
+const buttons = document.querySelectorAll('[data-type=color_changing_button]')
 for (const button of buttons) {
     button.onclick = colorChangeButtonOnClickHandler
 }
